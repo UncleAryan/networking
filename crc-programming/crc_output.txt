@@ -1,0 +1,82 @@
+===== CRC Creation =====
+line 1: Computer Science!
+  data (hex): 43 6F 6D 70 75 74 65 72 20 53 63 69 65 6E 63 65 21
+  crc  (hex): FAB2
+  code word : 43 6F 6D 70 75 74 65 72 20 53 63 69 65 6E 63 65 21 FA B2
+
+line 2: Fall Foliage around Poconos is beautiful.
+  data (hex): 46 61 6C 6C 20 46 6F 6C 69 61 67 65 20 61 72 6F 75 6E 64 20 50 6F 63 6F 6E 6F 73 20 69 73 20 62 65 61 75 74 69 66 75 6C 2E
+  crc  (hex): B119
+  code word : 46 61 6C 6C 20 46 6F 6C 69 61 67 65 20 61 72 6F 75 6E 64 20 50 6F 63 6F 6E 6F 73 20 69 73 20 62 65 61 75 74 69 66 75 6C 2E B1 19
+
+line 3: Data Communications.
+  data (hex): 44 61 74 61 20 43 6F 6D 6D 75 6E 69 63 61 74 69 6F 6E 73 2E
+  crc  (hex): 2731
+  code word : 44 61 74 61 20 43 6F 6D 6D 75 6E 69 63 61 74 69 6F 6E 73 2E 27 31
+
+line 4: Computer Networking and Performance Analysis.
+  data (hex): 43 6F 6D 70 75 74 65 72 20 4E 65 74 77 6F 72 6B 69 6E 67 20 61 6E 64 20 50 65 72 66 6F 72 6D 61 6E 63 65 20 41 6E 61 6C 79 73 69 73 2E
+  crc  (hex): 7F57
+  code word : 43 6F 6D 70 75 74 65 72 20 4E 65 74 77 6F 72 6B 69 6E 67 20 61 6E 64 20 50 65 72 66 6F 72 6D 61 6E 63 65 20 41 6E 61 6C 79 73 69 73 2E 7F 57
+
+line 5: OSI and TCP/IP models.
+  data (hex): 4F 53 49 20 61 6E 64 20 54 43 50 2F 49 50 20 6D 6F 64 65 6C 73 2E
+  crc  (hex): 122C
+  code word : 4F 53 49 20 61 6E 64 20 54 43 50 2F 49 50 20 6D 6F 64 65 6C 73 2E 12 2C
+
+line 6: Double major with Computer Security.
+  data (hex): 44 6F 75 62 6C 65 20 6D 61 6A 6F 72 20 77 69 74 68 20 43 6F 6D 70 75 74 65 72 20 53 65 63 75 72 69 74 79 2E
+  crc  (hex): 9842
+  code word : 44 6F 75 62 6C 65 20 6D 61 6A 6F 72 20 77 69 74 68 20 43 6F 6D 70 75 74 65 72 20 53 65 63 75 72 69 74 79 2E 98 42
+
+line 7: Modulo Math is being used in CRC algorithm.
+  data (hex): 4D 6F 64 75 6C 6F 20 4D 61 74 68 20 69 73 20 62 65 69 6E 67 20 75 73 65 64 20 69 6E 20 43 52 43 20 61 6C 67 6F 72 69 74 68 6D 2E
+  crc  (hex): 54C4
+  code word : 4D 6F 64 75 6C 6F 20 4D 61 74 68 20 69 73 20 62 65 69 6E 67 20 75 73 65 64 20 69 6E 20 43 52 43 20 61 6C 67 6F 72 69 74 68 6D 2E 54 C4
+
+line 8: FHSS and CDMA for wirless communications.
+  data (hex): 46 48 53 53 20 61 6E 64 20 43 44 4D 41 20 66 6F 72 20 77 69 72 6C 65 73 73 20 63 6F 6D 6D 75 6E 69 63 61 74 69 6F 6E 73 2E
+  crc  (hex): C460
+  code word : 46 48 53 53 20 61 6E 64 20 43 44 4D 41 20 66 6F 72 20 77 69 72 6C 65 73 73 20 63 6F 6D 6D 75 6E 69 63 61 74 69 6F 6E 73 2E C4 60
+
+line 9:       ... ? / ~ *$$$ ?????
+  data (hex): 20 20 20 20 20 20 2E 2E 2E 20 3F 20 2F 20 7E 20 2A 24 24 24 20 3F 3F 3F 3F 3F
+  crc  (hex): C2F0
+  code word : 20 20 20 20 20 20 2E 2E 2E 20 3F 20 2F 20 7E 20 2A 24 24 24 20 3F 3F 3F 3F 3F C2 F0
+
+line 10: This is the last line to test CRC.
+  data (hex): 54 68 69 73 20 69 73 20 74 68 65 20 6C 61 73 74 20 6C 69 6E 65 20 74 6F 20 74 65 73 74 20 43 52 43 2E
+  crc  (hex): 2DDA
+  code word : 54 68 69 73 20 69 73 20 74 68 65 20 6C 61 73 74 20 6C 69 6E 65 20 74 6F 20 74 65 73 74 20 43 52 43 2E 2D DA
+
+===== Code Word Testing =====
+line 1 code word: 43 6F 6D 70 75 74 65 72 20 53 63 69 65 6E 63 65 21 FA B2
+  remainder (hex): 0000  -> no error detected
+
+line 2 code word: 46 61 6C 6C 20 46 6F 6C 69 61 67 65 20 61 72 6F 75 6E 64 20 50 6F 63 6F 6E 6F 73 20 69 73 20 62 65 61 75 74 69 66 75 6C 2E B1 19
+  remainder (hex): 0000  -> no error detected
+
+line 3 code word: 44 61 74 61 20 43 6F 6D 6D 75 6E 69 63 61 74 69 6F 6E 73 2E 27 31
+  remainder (hex): 0000  -> no error detected
+
+line 4 code word: 43 6F 6D 70 75 74 65 72 20 4E 65 74 77 6F 72 6B 69 6E 67 20 61 6E 64 20 50 65 72 66 6F 72 6D 61 6E 63 65 20 41 6E 61 6C 79 73 69 73 2E 7F 57
+  remainder (hex): 0000  -> no error detected
+
+line 5 code word: 4F 53 49 20 61 6E 64 20 54 43 50 2F 49 50 20 6D 6F 64 65 6C 73 2E 12 2C
+  remainder (hex): 0000  -> no error detected
+
+line 6 code word: 44 6F 75 62 6C 65 20 6D 61 6A 6F 72 20 77 69 74 68 20 43 6F 6D 70 75 74 65 72 20 53 65 63 75 72 69 74 79 2E 98 42
+  remainder (hex): 0000  -> no error detected
+
+line 7 code word: 4D 6F 64 75 6C 6F 20 4D 61 74 68 20 69 73 20 62 65 69 6E 67 20 75 73 65 64 20 69 6E 20 43 52 43 20 61 6C 67 6F 72 69 74 68 6D 2E 54 C4
+  remainder (hex): 0000  -> no error detected
+
+line 8 code word: 46 48 53 53 20 61 6E 64 20 43 44 4D 41 20 66 6F 72 20 77 69 72 6C 65 73 73 20 63 6F 6D 6D 75 6E 69 63 61 74 69 6F 6E 73 2E C4 60
+  remainder (hex): 0000  -> no error detected
+
+line 9 code word: 20 20 20 20 20 20 2E 2E 2E 20 3F 20 2F 20 7E 20 2A 24 24 24 20 3F 3F 3F 3F 3F C2 F0
+  remainder (hex): 0000  -> no error detected
+
+line 10 code word: 54 68 69 73 20 69 73 20 74 68 65 20 6C 61 73 74 20 6C 69 6E 65 20 74 6F 20 74 65 73 74 20 43 52 43 2E 2D DA
+  remainder (hex): 0000  -> no error detected
+
